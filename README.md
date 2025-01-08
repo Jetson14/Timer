@@ -30,7 +30,7 @@ Welcome to the Timer App Assignment! As part of this assignment I am working on 
 
 4. Run tests:  
    ```bash
-   npm vitest
+   npm test
    ```
 
 ![image](https://github.com/user-attachments/assets/a730bb9f-b78e-46e3-97f6-9dbd6ea6674b)
