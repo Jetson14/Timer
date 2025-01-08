@@ -38,6 +38,7 @@ Welcome to the Timer App Assignment! As part of this assignment I am working on 
 ![image](https://github.com/user-attachments/assets/ca2c8394-176f-4cd6-b248-bf286a8a0129)
 ![image](https://github.com/user-attachments/assets/1276b18d-9879-4f6e-b1e7-54a670695275)
 ![image](https://github.com/user-attachments/assets/c6511cd2-0a76-442e-845d-192c8b06dab3)
+![image](https://github.com/user-attachments/assets/2a2223e4-4e83-494a-a8fc-d1bf3ee2ffec)
 
 
 
