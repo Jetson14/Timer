@@ -53,10 +53,7 @@ Welcome to the Timer App Assignment! As part of this assignment I am working on 
    5. **Extract Common Components:** 
    6. **Consolidate Modal Code:** 
    7. **Validation Snack Bars:** 
-   8. **Responsive Snack Bar Placement:** 
+   8. **Responsive Snack Bar Placement:**
+   9. **Write testcases**
    10. **Timer Persistence:**
 
----
-
-## **Pending Tasks**
-1. **Write testcases**
