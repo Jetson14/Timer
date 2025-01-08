@@ -20,6 +20,9 @@ export const TimerItem: React.FC<TimerItemProps> = ({ timer }) => {
   const timerAudio = TimerAudio.getInstance();
   const hasEndedRef = useRef(false);
 
+  const mobileView = window.matchMedia('(max-width: 640px)').matches;
+  const toastPosition = mobileView ? 'bottom-center' : 'top-right';
+
   useEffect(() => {
     if (timer.isRunning) {
       intervalRef.current = window.setInterval(() => {
@@ -35,6 +38,7 @@ export const TimerItem: React.FC<TimerItemProps> = ({ timer }) => {
               label: 'Dismiss',
               onClick: timerAudio.stop.bind(timerAudio),
             },
+            position: toastPosition,
           });
         }
       }, 1000);
