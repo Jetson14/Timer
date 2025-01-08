@@ -27,37 +27,37 @@ The app currently has a partially implemented timer system, and I am addressing 
       - <img width="250" alt="Screenshot 2024-12-03 at 8 21 30 PM" src="https://github.com/user-attachments/assets/a513a462-540f-45e7-8ac0-0890995ec82d">
 
 
-   3. **Simultaneous Timers:** Fixed!
+   2. **Simultaneous Timers:** Fixed!
       - Fixed! Now the timer app supports multiple timers.
 
-   4. **Snack Bar Behavior:** Yet to be fixed
+   3. **Snack Bar Behavior:** Fixed!
       - When a timer is completed:
         - A snack bar notification should display.
         - The notification sound should keep playing until the snack bar is dismissed.
 
-   5. **Fix Snack Bar Console Error:** Yet to be fixed
+   4. **Fix Snack Bar Console Error:** Fixed!
       - Resolve the **console error** that occurs when the snack bar's **dismiss button** is clicked.
 
-   6. **Extract Common Components:** Yet to be fixed
+   5. **Extract Common Components:** Yet to be fixed
       - Extract the buttons in the **Add/Edit Timer Modal** as a **separate reusable component**.
       - Replace all instances of similar buttons in the app with this component.
 
-   7. **Consolidate Modal Code:** Yet to be fixed
+   6. **Consolidate Modal Code:** Yet to be fixed
       - Refactor the code to use a **single modal component** for both adding and editing timers, eliminating duplication.
 
-   8. **Validation Snack Bars:** Yet to be fixed
+   7. **Validation Snack Bars:** Yet to be fixed
       - Currently, the **Submit button** is disabled when the form is invalid.
       - Show an **error snack bar** or notification when the form is submitted with invalid data.
 
-   9. **Responsive Snack Bar Placement:** Yet to be fixed
+   8. **Responsive Snack Bar Placement:** Yet to be fixed
       - For **desktop devices**: Display snack bars in the **top-right corner**.
       - For **mobile devices**: Display snack bars at the **bottom of the screen**.
 
-   10. **Write Tests:** Yet to be fixed
+   9. **Write Tests:** Yet to be fixed
       - Add **unit tests** for the `validation.ts` file to ensure all validation rules work as expected.
       - Write **component tests** for reusable components like `TimerItem` and `ModalButtons`.
 
-   11. **Timer Persistence:** Yet to be fixed
+   10. **Timer Persistence:** Yet to be fixed
        - Use **localStorage** to persist timers across page refreshes.
 
 ---
