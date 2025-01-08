@@ -2,8 +2,15 @@ import { configureStore, createSlice } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
 import { Timer } from '../types/timer';
 
+const storedTimer = localStorage.getItem('timerStore');
+const timerStore = storedTimer ? JSON.parse(storedTimer) : [];
+
+const storeTimers = (timers: Timer[]) => {
+  localStorage.setItem('timerStore', JSON.stringify(timers));
+}
+
 const initialState = {
-  timers: [] as Timer[],
+  timers: (timerStore) as Timer[],
 };
 
 const timerSlice = createSlice({
@@ -16,15 +23,18 @@ const timerSlice = createSlice({
         id: crypto.randomUUID(),
         createdAt: Date.now(),
       });
+      storeTimers(state.timers as Timer[]);
     },
     deleteTimer: (state, action) => {
       state.timers = state.timers.filter(timer => timer.id !== action.payload);
+      storeTimers(state.timers as Timer[]);
     },
     toggleTimer: (state, action) => {
       const timer = state.timers.find(timer => timer.id === action.payload);
       if (timer) {
         timer.isRunning = !timer.isRunning;
       }
+      storeTimers(state.timers as Timer[]);
     },
     updateTimer: (state, action) => {
       const timer = state.timers.find(timer => timer.id === action.payload);
@@ -32,6 +42,7 @@ const timerSlice = createSlice({
         timer.remainingTime -= 1;
         timer.isRunning = timer.remainingTime > 0;
       }
+      storeTimers(state.timers as Timer[]);
     },
     restartTimer: (state, action) => {
       const timer = state.timers.find(timer => timer.id === action.payload);
@@ -39,6 +50,7 @@ const timerSlice = createSlice({
         timer.remainingTime = timer.duration;
         timer.isRunning = false;
       }
+      storeTimers(state.timers as Timer[]);
     },
     editTimer: (state, action) => {
       const timer = state.timers.find(timer => timer.id === action.payload.id);
@@ -47,6 +59,7 @@ const timerSlice = createSlice({
         timer.remainingTime = action.payload.updates.duration || timer.duration;
         timer.isRunning = false;
       }
+      storeTimers(state.timers as Timer[]);
     },
   },
 });
