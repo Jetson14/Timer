@@ -1,11 +1,6 @@
-# Timer App Assignment 
+# Timer App 
 
 Welcome to the Timer App Assignment! As part of this assignment I am working on fixing the issues in the current project.
-
----
-
-## **Objective**
-The app currently has a partially implemented timer system, and I am addressing listed issues and extending its functionality.
 
 ---
 
@@ -38,43 +33,29 @@ The app currently has a partially implemented timer system, and I am addressing 
    npm vitest
    ```
 
+![image](https://github.com/user-attachments/assets/a730bb9f-b78e-46e3-97f6-9dbd6ea6674b)
+![image](https://github.com/user-attachments/assets/6b45ae50-71f8-4ccd-87e9-504efbb2b9e9)
+![image](https://github.com/user-attachments/assets/ca2c8394-176f-4cd6-b248-bf286a8a0129)
+![image](https://github.com/user-attachments/assets/1276b18d-9879-4f6e-b1e7-54a670695275)
+![image](https://github.com/user-attachments/assets/c6511cd2-0a76-442e-845d-192c8b06dab3)
+
+
+
+
 
 ## **Completed Tasks**
 
-   1. **Match the UI:** Fixed!
-   
-   2. **Simultaneous Timers:** Fixed!
-      - Fixed! Now the timer app supports multiple timers.
-
-   3. **Snack Bar Behavior:** Fixed!
-      - When a timer is completed:
-        - A snack bar notification should display.
-        - The notification sound should keep playing until the snack bar is dismissed.
-
-   4. **Fix Snack Bar Console Error:** Fixed!
-      - Resolve the **console error** that occurs when the snack bar's **dismiss button** is clicked.
-
-   5. **Extract Common Components:** Fixed!
-      - Extract the buttons in the **Add/Edit Timer Modal** as a **separate reusable component**.
-      - Replace all instances of similar buttons in the app with this component.
-
-   6. **Consolidate Modal Code:** Fixed!
-      - Refactor the code to use a **single modal component** for both adding and editing timers, eliminating duplication.
-
-   7. **Validation Snack Bars:** Fixed!
-      - Currently, the **Submit button** is disabled when the form is invalid.
-      - Show an **error snack bar** or notification when the form is submitted with invalid data.
-
-   8. **Responsive Snack Bar Placement:** Fixed!
-      - For **desktop devices**: Display snack bars in the **top-right corner**.
-      - For **mobile devices**: Display snack bars at the **bottom of the screen**.
-
-   9. **Write Tests:** Yet to be fixed
-      - Add **unit tests** for the `validation.ts` file to ensure all validation rules work as expected.
-      - Write **component tests** for reusable components like `TimerItem` and `ModalButtons`.
-
-   10. **Timer Persistence:** Fixed!
-       - Use **localStorage** to persist timers across page refreshes.
+   1. **Match the UI:**
+   2. **Simultaneous Timers:** 
+   3. **Snack Bar Behavior:** 
+   4. **Fix Snack Bar Console Error:** 
+   5. **Extract Common Components:** 
+   6. **Consolidate Modal Code:** 
+   7. **Validation Snack Bars:** 
+   8. **Responsive Snack Bar Placement:** 
+   10. **Timer Persistence:**
 
 ---
 
+## **Pending Tasks**
+1. **Write testcases**
